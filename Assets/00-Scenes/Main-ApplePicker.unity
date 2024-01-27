@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 329000115}
   - component: {fileID: 329000114}
   - component: {fileID: 329000113}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Basket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,7 +365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bafb26fb1bc06a4896ed20928d5a178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ApplePrefab: {fileID: 0}
+  ApplePrefab: {fileID: 4897896578629436134, guid: b71563fef59ee904da7dde3f5ef0a2d7, type: 3}
   speed: 10
   leftAndRightEdge: 10
   chanceToChangeDirections: 0.02
@@ -472,9 +472,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1278173872490421294, guid: 58d450d0ce599044896cca44eb8d569b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4257652809523006590, guid: 58d450d0ce599044896cca44eb8d569b, type: 3}
       propertyPath: m_Name
       value: Apple Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 4257652809523006590, guid: 58d450d0ce599044896cca44eb8d569b, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4360470854904653106, guid: 58d450d0ce599044896cca44eb8d569b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -515,6 +523,14 @@ PrefabInstance:
     - target: {fileID: 4360470854904653106, guid: 58d450d0ce599044896cca44eb8d569b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4814550068507680799, guid: 58d450d0ce599044896cca44eb8d569b, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832043695838605863, guid: 58d450d0ce599044896cca44eb8d569b, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
