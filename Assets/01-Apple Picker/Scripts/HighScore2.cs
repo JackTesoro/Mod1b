@@ -7,9 +7,12 @@ public class HighScore2 : MonoBehaviour
 {
     static public int score = 1000;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        if(PlayerPrefs.HasKey("HighScore")){
+            score = PlayerPrefs.GetInt("HighScore");
+        }
+        PlayerPrefs.SetInt("HighScore", score);
     }
 
     // Update is called once per frame
@@ -17,5 +20,8 @@ public class HighScore2 : MonoBehaviour
     {
         Text gt = this.GetComponent<Text>();
         gt.text = "High Score: "+score;
+        if(score > PlayerPrefs.GetInt("HighScore")){
+            PlayerPrefs.SetInt("HighScore", score);
+        }
     }
 }
